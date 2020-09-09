@@ -1,0 +1,48 @@
+.we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $header-text-color;
+  margin-bottom: 30px;
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.we-do {
+  padding-bottom: 94px;
+  &-list {
+    @include dFlex-m0();
+  }
+
+  &-item {
+    position: relative;
+  }
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .description {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary-white-color;
+
+    background: $primary-background-color;
+    padding: 27px 0;
+  }
+}

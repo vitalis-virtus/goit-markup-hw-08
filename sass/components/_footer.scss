@@ -1,0 +1,71 @@
+footer {
+  background-color: $footer-bgc;
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
+}
+.footer-dFlex {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 74px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+
+.logo-footer {
+  @include main-logo($primary-white-color);
+
+  font-size: 24px;
+  line-height: 1.16;
+
+  @media screen and(max-width: 767px) {
+  }
+}
+
+.social-link-footer {
+  @include social-link($primary-white-color, $social-link-footer-bgc);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+.footer {
+  &-main-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      margin-right: 70px;
+    }
+  }
+  &-adress {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-white-color;
+  }
+  &-contacts {
+    margin-top: 20px;
+  }
+  &-contact-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
+  }
+}

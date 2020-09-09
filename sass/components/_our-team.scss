@@ -1,0 +1,82 @@
+.team {
+  &-bg {
+    background-color: $secondary-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+    }
+  }
+}
+
+.card-discription {
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.player {
+  &-card {
+    background-color: $primary-white-color;
+
+    box-shadow: 0px 1px 3px $playercard-box-shadow-top,
+      0px 1px 1px $playercard-box-shadow-leftright,
+      0px 2px 1px $playercard-box-shadow-bottom;
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+  }
+
+  &-card:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $header-text-color;
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+
+  &-job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $title-text-color;
+    text-align: center;
+
+    margin-bottom: 16px;
+  }
+}

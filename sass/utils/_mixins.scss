@@ -1,0 +1,74 @@
+@mixin main-logo($second-word) {
+  // display: inline-block;
+  font-family: $logo-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  span {
+    color: $second-word;
+  }
+}
+
+@mixin dFlex-aiCenter() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin main-btn() {
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px $main-btn-box-shadow;
+}
+
+@mixin header() {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $header-text-color;
+
+  margin-bottom: 50px;
+}
+
+@mixin dFlex-m0() {
+  display: flex;
+  margin: 0;
+}
+
+@mixin pTop-pBottom94() {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@mixin social-link($link-fill, $link-bgc) {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  fill: $link-fill;
+  background-color: $link-bgc;
+
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}

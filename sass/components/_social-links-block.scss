@@ -1,0 +1,26 @@
+.social {
+  &-links {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+  }
+  &-link-we-do {
+    @include social-link($border-color, $primary-white-color);
+  }
+  &-link-we-do:hover,
+  &-link-we-do:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+  &-link-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.button-icon {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}

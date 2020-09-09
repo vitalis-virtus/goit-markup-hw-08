@@ -1,0 +1,28 @@
+/*Главный файл стилей*/
+
+//шрифт
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap");
+
+// Хелперы
+@import "./utils/_variables";
+@import "./utils/_mixins";
+@import "./utils/_placeholders";
+
+//базовый
+@import "./utils/_base-noralize";
+
+//компоненты
+@import "./components/_header.scss";
+@import "./components/_hero1.scss";
+@import "./components/_features.scss";
+@import "./components/_what-we-do.scss";
+@import "./components/_our-team";
+@import "./components/_social-links-block.scss";
+@import "./components/_regular-customers.scss";
+@import "./components/_footer.scss";
+@import "./components/_social-networks-footer-block";
+@import "./components/_subscribe-form-footer";
+@import "./components/_portfolio-projects-menu.scss";
+@import "./components/_portfolio-projects.scss";
+@import "./components/_modal.scss";

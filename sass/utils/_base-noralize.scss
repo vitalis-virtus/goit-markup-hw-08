@@ -1,0 +1,80 @@
+body {
+  background-color: $primary-white-color;
+  font-family: $main-font;
+  font-style: normal;
+  color: $header-text-color;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+// .d-flex {
+//   display: flex;
+// }
+
+// .mb20px {
+//   margin-bottom: 20px;
+// }
+
+// .pb9px {
+//   padding-bottom: 9px;
+// }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
